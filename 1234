@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+
+   
+    int num, a, b, c, d;
+
+    
+    cout << "ป้อนค่าจำนวนเต็ม (1001-1999): ";
+    cin >> num;
+
+
+    d = num % 10;        
+    c = (num / 10) % 10;  
+    b = (num / 100) % 10; 
+    a = num / 1000;     
+
+    int sum = a + b + c + d;
+
+  
+    cout << a << "+" << b << "+" << c << "+" << d << " เท่ากับ " << sum << endl;
+
+    return 0;
+}

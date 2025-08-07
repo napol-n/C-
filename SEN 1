@@ -1,0 +1,58 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    // ประกาศตัวแปร
+    int A, B, C, D, E;
+
+    // รับค่าจากผู้ใช้
+    cout << "ป้อนค่า A: ";
+    cin >> A;
+    cout << "ป้อนค่า B: ";
+    cin >> B;
+    cout << "ป้อนค่า C: ";
+    cin >> C;
+    cout << "ป้อนค่า D: ";
+    cin >> D;
+    cout << "ป้อนค่า E: ";
+    cin >> E;
+
+    // 1) (A+B)*(E-D)
+    int result1 = (A + B) * (E - D);
+    cout << "1) (A+B)*(E-D) = " << result1 << endl;
+
+    // 2) ++D+C*E
+    int result2 = ++D + C * E;
+    cout << "2) ++D+C*E = " << result2 << endl;
+
+    // 3) (25+A)/C+B
+    int result3 = (25 + A) / C + B;
+    cout << "3) (25+A)/C+B = " << result3 << endl;
+
+    // 4) 20*C+B+++D/2
+    int result4 = 20 * C + B + ++D / 2;
+    cout << "4) 20*C+B+++D/2 = " << result4 << endl;
+
+    // 5) --D+C+B--
+    int result5 = --D + C + B;
+    cout << "5) --D+C+B-- = " << result5 << endl;
+
+    // 6) 25*D/5+10
+    int result6 = 25 * D / 5 + 10;
+    cout << "6) 25*D/5+10 = " << result6 << endl;
+
+    // 7) A+B--+D
+    int result7 = A + B + --D;
+    cout << "7) A+B--+D = " << result7 << endl;
+
+    // 8) C*2+E*5
+    int result8 = C * 2 + E * 5;
+    cout << "8) C*2+E*5 = " << result8 << endl;
+
+    // 9) (A*2)+B/C-15
+    int result9 = (A * 2) + B / C - 15;
+    cout << "9) (A*2)+B/C-15 = " << result9 << endl;
+
+    return 0;
+}

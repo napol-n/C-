@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+
+int main() {
+    float r, sqarea, carea, area;
+
+    std::cout << "  ";
+    std::cin >> r;
+    
+    sqarea = 4 * pow(r, 2);
+
+    carea = M_PI * pow(r, 2);
+
+    area = sqarea - carea;
+    std::cout << "Area:" << area << std::endl;
+
+    return 0;
+}
